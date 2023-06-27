@@ -19,6 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- Header -->
@@ -58,6 +59,12 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="open-hamburger-btn js-open-menu">
+          <!-- <span></span> -->
+          <svg class="open-humburger-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-open-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Main -->
@@ -72,7 +79,7 @@
         </div>
       </section>
       <!-- Solutions -->
-      <section class="solutions">
+      <section class="section">
         <div class="container solutions-container">
           <h2 class="visually-hidden">List of effective solutions</h2>
           <ul class="solutions-list list">
@@ -83,7 +90,7 @@
                 </svg>
               </div>
               <h3 class="list-subtitle solutions-subtitle">Strategy</h3>
-              <p class="list-text">
+              <p class="list-text solutions-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -95,7 +102,7 @@
                 </svg>
               </div>
               <h3 class="list-subtitle solutions-subtitle">Punctuality</h3>
-              <p class="list-text">
+              <p class="list-text solutions-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -107,7 +114,7 @@
                 </svg>
               </div>
               <h3 class="list-subtitle solutions-subtitle">Diligence</h3>
-              <p class="list-text">
+              <p class="list-text solutions-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -119,7 +126,7 @@
                 </svg>
               </div>
               <h3 class="list-subtitle solutions-subtitle">Technologies</h3>
-              <p class="list-text">
+              <p class="list-text solutions-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -134,6 +141,10 @@
           <ul class="activities-list list">
             <li class="activities-item">
               <img
+                srcset="
+                  ./images/what-are-we-doing-1.jpg    1x,
+                  ./images/what-are-we-doing-1-2x.jpg 2x
+                "
                 src="./images/what-are-we-doing-1.jpg"
                 alt="Mac-website"
                 width="360"
@@ -142,6 +153,10 @@
             </li>
             <li class="activities-item">
               <img
+                srcset="
+                  ./images/what-are-we-doing-2.jpg    1x,
+                  ./images/what-are-we-doing-2-2x.jpg 2x
+                "
                 src="./images/what-are-we-doing-2.jpg"
                 alt="Phone-network"
                 width="360"
@@ -150,6 +165,10 @@
             </li>
             <li class="activities-item">
               <img
+                srcset="
+                  ./images/what-are-we-doing-3.jpg    1x,
+                  ./images/what-are-we-doing-3-2x.jpg 2x
+                "
                 src="./images/what-are-we-doing-3.jpg"
                 alt="Phone-application"
                 width="360"
@@ -160,12 +179,16 @@
         </div>
       </section>
       <!-- Our team -->
-      <section class="team">
+      <section class="team section">
         <div class="container container-team">
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-1.jpg    1x,
+                  ./images/our-team-1-2x.jpg 2x
+                "
                 src="./images/our-team-1.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
@@ -208,6 +231,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-2.jpg    1x,
+                  ./images/our-team-2-2x.jpg 2x
+                "
                 src="./images/our-team-2.jpg"
                 alt="Tom Ford photo"
                 width="264"
@@ -258,6 +285,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-3.jpg    1x,
+                  ./images/our-team-3-2x.jpg 2x
+                "
                 src="./images/our-team-3.jpg"
                 alt="Camila Garcia photo"
                 width="264"
@@ -308,6 +339,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/our-team-4.jpg    1x,
+                  ./images/our-team-4-2x.jpg 2x
+                "
                 src="./images/our-team-4.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
@@ -562,6 +597,78 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu-toggle js-close-menu modal-btn"
+        data-modal-close
+      >
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="list-subtitle mobile-menu-link pressed"
+            >Studio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="./portfolio.html" class="list-subtitle mobile-menu-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a href="" class="list-subtitle mobile-menu-link">Contacts</a>
+        </li>
+      </ul>
+      <div class="mobile-address-container">
+        <ul class="mobile-address-list">
+          <li class="mobile-address-item">
+            <a href="tel:+110001111111" class="mobile-menu-tel"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-address-item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu-mail"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-list mobile-social-list">
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
