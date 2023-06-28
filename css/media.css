@@ -332,6 +332,10 @@
   .footer-social-text {
     text-align: center;
   }
+
+  .modal {
+    overflow: scroll;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -348,7 +352,7 @@
     gap: 72px 24px;
     justify-content: start;
     align-items: start;
-    padding-left: 93px;
+    max-width: 550px;
   }
 }
 
